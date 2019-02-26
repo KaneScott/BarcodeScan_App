@@ -1,0 +1,131 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:id="@+id/mainContent"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:background="@color/appPrimary"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/product_name"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_marginLeft="@dimen/margin"
+        android:layout_marginRight="@dimen/margin"
+        android:layout_marginBottom="@dimen/margin"
+        android:fontFamily="@font/lato_black"
+        android:text="@string/product_name"
+        android:textAlignment="center"
+        android:textColor="@color/appBlack"
+        android:textSize="@dimen/text_header"
+        android:textStyle="bold" />
+
+
+    <android.support.v7.widget.CardView xmlns:card_view="http://schemas.android.com/apk/res-auto"
+        android:id="@+id/card_viewProduct"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/product_name"
+        android:layout_centerHorizontal="true"
+        card_view:cardBackgroundColor="@color/appComplementary"
+        card_view:cardCornerRadius="4dp"
+        card_view:cardElevation="16dp">
+
+        <RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+            xmlns:tools="http://schemas.android.com/tools"
+            android:id="@+id/productRelativeView"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+
+            android:orientation="vertical"
+            tools:context=".ProductScreen">
+
+            <ImageView
+                android:id="@+id/product_image"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_centerHorizontal="true"
+                android:layout_marginTop="@dimen/margin"
+                android:background="@drawable/imageview_border"
+                android:cropToPadding="true"
+                android:layout_marginBottom="@dimen/margin" />
+
+
+        </RelativeLayout>
+    </android.support.v7.widget.CardView>
+
+    <TextView
+        android:id="@+id/product_description"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_below="@id/card_viewProduct"
+        android:layout_centerHorizontal="true"
+        android:layout_marginTop="@dimen/margin"
+        android:fontFamily="@font/lato_regular"
+        android:text="@string/product_description"
+        android:scrollbars="vertical"
+        android:fadeScrollbars="false"
+        android:textAlignment="center"
+        android:textColor="@color/appBlack"
+        android:textSize="@dimen/text_body" />
+
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="3dp"
+        android:layout_alignTop="@id/product_price_list"
+        android:elevation="8dp"
+        android:src="@drawable/myrect" />
+
+    <LinearLayout
+        android:id="@+id/product_price_list"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/buttons"
+        android:paddingLeft="@dimen/margin"
+        android:background="@color/appComplementary"
+        android:elevation="7dp"
+        android:gravity="left"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/product_price_list_right"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignTop="@id/product_price_list"
+        android:layout_alignParentRight="true"
+        android:layout_marginRight="@dimen/margin"
+        android:background="@color/appComplementary"
+        android:elevation="7dp"
+        android:gravity="right"
+        android:orientation="vertical"
+        android:paddingTop="@dimen/margin"></LinearLayout>
+
+    <LinearLayout
+        android:id="@+id/buttons"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/appComplementary"
+        android:elevation="7dp"
+        android:gravity="center_horizontal"
+        android:orientation="vertical">
+
+
+        <Button
+            android:id="@+id/read_barcode"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginLeft="@dimen/margin"
+            android:layout_marginTop="@dimen/margin"
+            android:layout_marginRight="@dimen/margin"
+            android:layout_marginBottom="@dimen/margin"
+            android:text="@string/read_barcode" />
+
+
+    </LinearLayout>
+</RelativeLayout>

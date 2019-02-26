@@ -1,0 +1,9 @@
+<resources>
+    <string name="app_name">My ApplicationFirebase</string>
+    <string name="read_barcode">Click here to read barcode</string>
+    <string name="product_name">PRODUCT NAME HERE</string>
+    <string name="product_description">PRODUCT DESCRIPTION HERE</string>
+    <string name="product_prices">PRODUCT PRICES HERE</string>
+    <string name="open_google_maps">Click here to find a location near you</string>
+    <string name="store_rating">RATINGS TO GO HERE</string>
+</resources>

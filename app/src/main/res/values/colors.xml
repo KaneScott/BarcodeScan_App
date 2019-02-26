@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#008577</color>
+    <color name="colorPrimaryDark">#00574B</color>
+    <color name="colorAccent">#D81B60</color>
+    <color name="colorTest">#4449ab</color>
+    <color name="colorPrim">#05668d</color>
+    <color name ="colorTextCustomLink">#02c39a</color>
+    <color name="colorTextCustom">#f0f3bd</color>
+    <color name="colorPrimDark">#0b79d3</color>
+    <color name="colorComp">#00a896</color>
+    <color name="colorCompDark">#e86237</color>
+    <color name="colorAnaDark">#37c2be</color>
+
+    <color name="appPrimary">#e8e9f4</color>
+    <color name="appComplementary">#f4f3e8</color>
+    <color name="appBlack">#000000</color>
+    <color name="appAnalogous">#af9587</color>
+    <color name="appDarkComplementary">#4449ab</color>
+
+    <color name="colorTT_Background">#FFFFFF</color>
+    <color name="colorTT_OnPrimary">#000000</color>
+    <color name="colorTT_Primary">#ef5350</color>
+    <color name="colorTT_PrimaryDark">#b61827</color>
+    <color name ="colorTT_PrimaryLight">#ff867c</color>
+    <color name="colorTT_OnBackground">#000000</color>
+    <color name="colorTT_Secondary">#03DAC6</color>
+    <color name="colorTT_OnSecondary">#000000</color>
+
+</resources>
