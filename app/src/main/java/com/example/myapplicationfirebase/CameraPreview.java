@@ -346,25 +346,25 @@ public class CameraPreview extends AppCompatActivity {
 
                                 }
                             }
-                            Handler handler = new Handler();
-                            handler.postDelayed(new Runnable() {
-                                @Override
-                                public void run() {
-                                    takePicture();
-                                }
-                            },1000);
+//                            Handler handler = new Handler();
+//                            handler.postDelayed(new Runnable() {
+//                                @Override
+//                                public void run() {
+//                                    takePicture();
+//                                }
+//                            },1000);
                         }
                     })
                     .addOnFailureListener(new OnFailureListener() {
                         @Override
                         public void onFailure(@android.support.annotation.NonNull Exception e) {
-                            Handler handler = new Handler();
-                            handler.postDelayed(new Runnable() {
-                                @Override
-                                public void run() {
-                                    takePicture();
-                                }
-                            },1000);
+//                            Handler handler = new Handler();
+//                            handler.postDelayed(new Runnable() {
+//                                @Override
+//                                public void run() {
+//                                    takePicture();
+//                                }
+//                            },1000);
                         }
                     });
 
